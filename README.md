@@ -1,10 +1,14 @@
-# Getting Started with Create React App
+# Shelf
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Bookshelf app where users can search for and add books or albums to their shelves. 
 
-## Available Scripts
+## Functionality
 
-In the project directory, you can run:
+- Users have two screens which they can use, a Books screen and an Audio screen
+ - For each screen users can use the search bar to search for the title of a book or album which they would like to add to their shelf
+- A card will appear on the screen, indicating that the book/album was added to the shelf
+- Users can drag the cards left and right to see which cards are available on the shelf
+- Users can also delete any books/albums they wish by tapping the x on the card.
 
 ### `npm start`
 
