@@ -2,73 +2,31 @@
 
 A Bookshelf app where users can search for and add books or albums to their shelves. 
 
+
+
 ## Functionality
 
 - Users have two screens which they can use, a Books screen and an Audio screen
  - For each screen users can use the search bar to search for the title of a book or album which they would like to add to their shelf
-- A card will appear on the screen, indicating that the book/album was added to the shelf
+- A card will appear on the screen, indicating that the book/album was added to the shelf. The color of the cards is selected at random from a palette
 - Users can drag the cards left and right to see which cards are available on the shelf
 - Users can also delete any books/albums they wish by tapping the x on the card.
 
-### `npm start`
+## Known Issues
+- Currently text wrapping for longer titles is inconsistent, and leads to some text being cut off
+- There are no artists that display on the album cards, which is a result of the formatting of the MusicBrainz api using a '-' in the name of an element in the JSON array. 
+- There is a slight delay from when the user types in a query to search results being displayed. Currently the way around this is to continue to type the query
+- The delay in search also leads to results sporadically switching
+- The app does not scale well on mobile phones yet
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Future Functionality
+- I hope to make this a community bookshelf, where users from all over can access the same site and add books or albums they want to share
+- I also hope to add search by author/artist as well
+- I will also be adding extra accessiblity features to make the app more usable by all
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Credits
+CoderOne's video on how to make an autocompleting search bar
+(https://www.youtube.com/watch?v=IlnmWntmUns)
 
-### `npm test`
+StackOverflow
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
