@@ -30,9 +30,11 @@ Framer motion for the animation
 ## Credits
 CoderOne's video on how to make an autocompleting search bar
 (https://www.youtube.com/watch?v=IlnmWntmUns)
+StackOverflow
+Framer Motion docs
 
 ## Notes
 At the time of submission OpenLibrary's servers are down due to a storm
 
-StackOverflow
+
 
