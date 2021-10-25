@@ -1,6 +1,7 @@
 # Shelf
 
 A Bookshelf app where users can search for and add books or albums to their shelves. 
+![Peek 2021-10-24 22-13](https://user-images.githubusercontent.com/22431170/138624683-d339b16c-96e0-4a22-8ea7-59bc94902941.gif)
 
 ## APIs used
 OpenLibrary and MusicBrainz
