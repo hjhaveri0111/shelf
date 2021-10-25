@@ -2,7 +2,9 @@
 
 A Bookshelf app where users can search for and add books or albums to their shelves. 
 
-
+## APIs used
+OpenLibrary and MusicBrainz
+Framer motion for the animation
 
 ## Functionality
 
@@ -27,6 +29,9 @@ A Bookshelf app where users can search for and add books or albums to their shel
 ## Credits
 CoderOne's video on how to make an autocompleting search bar
 (https://www.youtube.com/watch?v=IlnmWntmUns)
+
+## Notes
+At the time of submission OpenLibrary's servers are down due to a storm
 
 StackOverflow
 
