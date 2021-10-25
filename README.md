@@ -3,6 +3,9 @@
 A Bookshelf app where users can search for and add books or albums to their shelves. 
 ![Peek 2021-10-24 22-13](https://user-images.githubusercontent.com/22431170/138624683-d339b16c-96e0-4a22-8ea7-59bc94902941.gif)
 
+
+![Peek 2021-10-25 00-26](https://user-images.githubusercontent.com/22431170/138634690-093e8505-8672-4cbd-9979-270f5d25dd14.gif)
+
 ## APIs used
 OpenLibrary and MusicBrainz
 Framer motion for the animation
@@ -34,7 +37,7 @@ StackOverflow
 Framer Motion docs
 
 ## Notes
-At the time of submission OpenLibrary's servers are down due to a storm
+At the time of submission OpenLibrary was down
 
 
 
