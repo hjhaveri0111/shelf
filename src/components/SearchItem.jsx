@@ -1,25 +1,30 @@
-import React from 'react'
-import { motion } from 'framer-motion';
-export default function SearchItem({id, item, books,setBooks, flag}) {
-    // const {key, books, title, author} = props;
-    return (
-        <motion.div className="item-container"
-            // whileHover={{opacity: 1}}
-            whileTap={{ scale: .9}}
-            transition={{
-                type:"spring",
-                stiffness:100
-            }}
-            onClick={() => setBooks(item)}    
-        >
-           
-            <motion.h3 className="title"
-            whileHover={{opacity: 1}}>
-                {item.title} {flag ? "by " + item.author_name : ""}
-            
-            
-            </motion.h3>
-            
-        </motion.div>
-    )
+import React from "react";
+import { motion } from "framer-motion";
+
+import { useDispatchContext } from "../Contexts/AppContext";
+export default function SearchItem({ id, item, flag }) {
+  const dispatch = useDispatchContext();
+  return (
+    <motion.div
+      className="item-container"
+      whileHover={{ color: "white" }}
+      whileTap={{ scale: 0.9 }}
+      transition={{
+        type: "spring",
+        stiffness: 100,
+      }}
+      onClick={() =>
+        flag
+          ? dispatch({ type: "addBook", book: item })
+          : dispatch({ type: "addMusic", music: item })
+      }
+    >
+      <motion.h3 className="title" whileHover={{ opacity: 1.1 }}>
+        {item.title}{" "}
+        {flag
+          ? "by " + item.author_name
+          : "by " + item["artist-credit"][0]["name"]}
+      </motion.h3>
+    </motion.div>
+  );
 }

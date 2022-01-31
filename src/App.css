@@ -3,16 +3,15 @@
   margin: 0;
   box-sizing: border-box;
   background-color: black;
-  font-family:'Montserrat', sans-serif;
-  font-size: 20px ;
-  
+  font-family: "Montserrat", sans-serif;
+  font-size: max(1.2vh, 1.2vw);
 }
 .App {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
- 
+
   overflow: hidden;
   width: 100vw;
   height: 100vh;
@@ -20,8 +19,8 @@
 
 .nav-container {
   display: flex;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0;
 
   width: 100%;
@@ -32,21 +31,19 @@
 }
 
 .nav-title {
-  font-size: 100px;
+  font-size: 10vw;
 }
 
 li {
   list-style-type: none;
   display: inline;
-  font-size: 50px;
-  margin-right: 20px
+  font-size: 5vw;
+  margin-right: 5vw;
 }
 
 .nav-item {
   display: inline-block;
   background-color: transparent;
-  /* border-radius: 50%; */
-  /* margin: 20px; */
   position: relative;
   cursor: pointer;
   flex-shrink: 0;
@@ -55,22 +52,18 @@ li {
 .outline {
   position: absolute;
   top: -20px;
-  /*left: -20px;
-  right: -20px;
-  bottom: -30px; */
+
   width: 100%;
-  border: 10px solid white;
-  /* border-radius: 50%; */
+  border: max(0.75vh, 0.75vw) solid white;
 }
 
-
 .nav-selector-container {
-  font-size: 50px;
+  font-size: 5vw;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  
+
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -79,12 +72,12 @@ li {
 
 .nav-books {
   font-size: inherit;
-  padding-right: 10px;
+  padding-right: 15vw;
 }
 
 .nav-audio {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15vw;
+  padding-right: 15vw;
   font-size: inherit;
 }
 .list {
@@ -92,25 +85,22 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row; 
+  flex-direction: row;
   overflow: visible;
   /* flex-wrap: wrap; */
   margin-left: 10vw;
   margin-right: 10vw;
-  width : 100%
-
+  width: 100%;
 }
 .search-container {
   display: flex;
   flex-direction: column;
   width: 40vw;
   height: 3vh;
-  background-color:black;
+  background-color: black;
   border-radius: 6px;
   overflow: visible;
   overflow-y: hidden;
-  
-  
 }
 .input-container {
   width: 100%;
@@ -118,7 +108,7 @@ li {
   display: flex;
   align-items: center;
   position: relative;
-
+  font-size: 1vw;
 }
 .search-icon {
   margin-left: 5%;
@@ -129,18 +119,19 @@ li {
   height: 100%;
   width: 100%;
   outline: none;
-  border:none;
+  border: none;
   background-color: transparent;
+  font-size: 200%;
 }
 
 .search:focus {
-  outline: none
+  outline: none;
 }
 
 .item-container {
   width: 100%;
   max-height: 5vh;
-  
+
   display: flex;
   border-bottom: 2px solid, lightgray;
   margin-top: 5px;
@@ -149,28 +140,6 @@ li {
   align-items: center;
   overflow: hidden;
 }
-
-.cover {
-  width: auto;
-  height: 100%;
-  display: flex;
-  flex: 0.4;
-}
-
-img {
-  width: auto;
-  height: 100%;
-}
-
-.title {
-  font-size: auto;
-  opacity: .7;
-  color: white;
-  
-  flex: 2;
-  display: flex;
-}
-
 
 .card-container {
   /* justify-self: flex-start; */
@@ -181,15 +150,17 @@ img {
   margin: 30px;
   background-color: black;
 
-  width: 10rem;
-  height: 20rem;
+  width: min(20vw, 20vh);
+  height: min(40vh, 40vw);
 }
 
 .card {
-  background-color: #F80E07;
+  background-color: none;
+
+  color: black;
   padding: 20px;
   flex-shrink: 0;
-  opacity: .8;
+  opacity: 0.8;
   width: 100%;
   height: 100%;
   border-radius: 15px;
@@ -200,11 +171,10 @@ img {
   overflow: hidden;
   text-align: center;
   flex-wrap: nowrap;
-  
 }
 
 .card-title {
-  color: black;
+  /* font-size: 1.2em;/ */
   overflow-wrap: break-word;
   background-color: inherit;
 }
@@ -215,8 +185,10 @@ img {
   justify-content: flex-start;
   align-items: center;
   text-align: flex;
+  flex-shrink: 2;
 }
+
 .author {
   background-color: inherit;
-  color: black;
+  /* font-size: 1.2em; */
 }

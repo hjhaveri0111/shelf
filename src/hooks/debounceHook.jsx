@@ -1,22 +1,21 @@
-import React from 'react'
-import { useState, useEffect } from 'react'
+import React from "react";
+import { useState, useEffect } from "react";
 
 export default function useDebounce(value, timeout, callback) {
-    const [timer, setTimer] = useState(null);
+  const [timer, setTimer] = useState(null);
 
-    const clearTimer = () => {
-        if (timer) {
-            clearTimeout(timer)
-        }
+  const clearTimer = () => {
+    if (timer) {
+      clearTimeout(timer);
     }
+  };
 
-    useEffect(() => {
-        clearTimer();
+  useEffect(() => {
+    clearTimer();
 
-        if (value && callback) {
-            const newTimer = setTimeout(callback, timeout);
-            setTimer(newTimer);
-        }
-        
-    }, [value])
+    if (value && callback) {
+      const newTimer = setTimeout(callback, timeout);
+      setTimer(newTimer);
+    }
+  }, [value]);
 }
